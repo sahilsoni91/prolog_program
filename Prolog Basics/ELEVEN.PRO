@@ -1,0 +1,51 @@
+predicates
+go
+water(integer,integer)
+clauses
+go:-
+write("Enter Quantity of First Jug="),
+readint(X),
+write("Ente Quantity of Second Jug="),
+readint(Y),
+Y<=3,
+write(X,"-",Y),nl,
+water(X,Y).
+go:-
+write("you entered wrong values"),
+readint(_),
+go.
+water(2,_):-
+nl,write("Problem solved!!!"),nl.
+water(0,2):-
+write("2-0"),nl,
+water(2,0).
+water(_,2):-
+write("0-2"),nl,
+water(0,2).
+water(4,1):-
+write("2-3"),nl,
+water(2,3).
+water(_,1):-
+write("4-1"),nl,
+water(4,1).
+water(1,0):-
+write("0-1"),nl,
+water(0,1).
+water(1,3):-
+write("1-0"),nl,
+water(1,0).
+water(4,0):-
+write("1-3"),nl,
+water(1,3).
+water(0,0):-
+write("4-0"),nl,
+water(4,0).
+water(0,3):-
+write("0-0"),nl,
+water(0,0).
+water(3,0):-
+write("4-0"),nl,
+water(4,0).
+water(3,3):-
+write("3-3"),nl,
+water(3,0).

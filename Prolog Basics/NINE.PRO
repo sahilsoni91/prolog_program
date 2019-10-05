@@ -1,0 +1,16 @@
+domains
+A,B,C=symbol
+predicates
+suc(symbol,symbol)
+bfs(symbol,symbol)
+clauses
+suc(a,b).
+suc(b,c).
+suc(c,d).
+suc(d,e).
+suc(e,f).
+suc(f,g).
+bfs(A,C):-
+suc(A,B),
+write(B),nl,
+bfs(B,C).
